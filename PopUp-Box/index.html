@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-200 min-h-screen flex-col flex justify-center items-center"
+  >
+    <button
+      class="p-2 rounded-lg bg-blue-500 text-[18px] font-semibold"
+      id="clickBtn"
+    >
+      Click me
+    </button>
+    <div
+      id="modal"
+      class="hidden relative flex flex-col p-4 justify-center items-center bg-white w-[400px] h-[300px] rounded-[20px]"
+    >
+      <h2 class="mb-3 text-2xl font-semibold text-center">
+        Your account will be deleted Permanently!
+      </h2>
+      <p class="mb-4 text-lg">Are you sute to proceed?</p>
+      <div class="flex space-x-3">
+        <button
+          id="gancelBtn"
+          class="rounded-md p-2 border bg-gray-400 text-[16px] font-semibold"
+        >
+          Gancel Process
+        </button>
+        <button
+          class="rounded-md p-2 border bg-red-500 text-[16px] font-semibold"
+          id="deleteBtn"
+        >
+          Delete Account
+        </button>
+        <div class="hidden mt-4" id="news">
+          <p class="text-green-600">Your Account Deleted Successfully</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
