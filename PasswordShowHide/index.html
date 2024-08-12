@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-blue-400 min-h-screen w-screen flex justify-center items-center flex-col"
+  >
+    <div class="flex items-center border rounded-md">
+      <input id="input" class="flex-1 p-2 outline-none" type="password" />
+      <button id="btn" class="size-[30px]">
+        <i class="fa-solid fa-eye" id="openEye"></i>
+        <i class="fa-solid fa-eye-slash hidden" id="closeEye"></i>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
